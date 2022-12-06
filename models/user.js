@@ -1,5 +1,6 @@
 'use strict';
 
+const bcrypt = require('bcrypt');
 
 
 const UserModel = (seq, DataTypes) => {
@@ -12,6 +13,9 @@ const UserModel = (seq, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+  });
+  users.beforeCreate( async (user) => {
+    user.password = await bcrypt.hash(user.password, 7);
   });
   return users;
 };
