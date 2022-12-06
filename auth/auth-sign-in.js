@@ -7,9 +7,9 @@ const { Users } = require('../models');
 
 
 module.exports = async (req, res, next) => {
-  Users.beforeCreate(() => {
+  // Users.beforeCreate(() => {
 
-  });
+  // });
 
   try {
     if (!req.headers.authorization) return 'Not Authorized';

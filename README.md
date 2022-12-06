@@ -5,12 +5,13 @@
 ### Author: Steven Rejdukowski
 
 ### Problem Domain
+
 Authentication System Phase 1: Deploy an Express server that implements Basic Authentication, with signup and signin capabilities, using a Postgres database for storage.
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/Stevenrej/api-server/actions/new) (GitHub Actions)
-- [prod deployment](https://api-server-prod-rwla.onrender.com/)
+- [ci/cd](https://github.com/Stevenrej/basic-auth/actions) (GitHub Actions)
+- [prod deployment](https://basic-auth-mz19.onrender.com/)
 
 
 ### Setup
@@ -42,4 +43,4 @@ see `.env.sample`
 
 #### UML
 
-![UML]()
+![UML](lab6.jpeg)
