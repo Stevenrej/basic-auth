@@ -1,37 +1,45 @@
-# package.json Notes:
+# LAB - Class 06
 
-## For React Applications
+## Project:  Basic Authentication
 
- To deploy your application at GitHub pages, you'll need to add a home page property to your package.json which points to the deployed base URL of your GitHub Pages site.
- 
- *NOTE: This will break deployments to other hosting services such as Netlify, Vercel, or AWS Amplify, so if you later wish to deploy there, remove this property completely*
- 
-     {
-       "homepage": "https://yourname.github.io/repository-name"
-     }
+### Author: Steven Rejdukowski
 
-## Node / Express Applications
+### Problem Domain
+Authentication System Phase 1: Deploy an Express server that implements Basic Authentication, with signup and signin capabilities, using a Postgres database for storage.
 
-### For Tests
-Your Scripts section should have the following, so that you can easily run tests locally and in your CI
+### Links and Resources
 
-  "scripts": {
-    "start": "node index.js",
-    "lint": "eslint **/*.js",
-    "test": "jest --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage"
-},
+- [ci/cd](https://github.com/Stevenrej/api-server/actions/new) (GitHub Actions)
+- [prod deployment](https://api-server-prod-rwla.onrender.com/)
 
 
-### For NPM Modules
+### Setup
 
-If you are creating a module to deploy at NPM, you'll want a "bin" section that identifies the name of the global command to run and your .js file that runs when called.
+#### `.env` requirements (where applicable)
 
-"bin": {
-    "fetch": "index.js"
-}
+see `.env.sample`
 
-Additionally, that file should have as it's first line, so that it'll run without having to type "node filename.js" every time
+- PORT: 3000
 
-#!/usr/bin/env node
+- DATABASE_URL=postgres://localhost:5432/auth
 
+#### How to initialize/run your application (where applicable)
+
+- nodemon
+
+#### Features / Routes
+
+
+- Feature One: User Database
+- POST : `/signin`
+- POST : `/signup`
+
+
+#### Tests
+
+- How do you run tests?
+
+
+#### UML
+
+![UML]()
