@@ -13,7 +13,6 @@ const UserModel = (seq, DataTypes) => {
       allowNull: false,
     },
   });
-  console.log(users);
   return users;
 };
 
